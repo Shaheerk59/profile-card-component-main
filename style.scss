@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+:root {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Kumbh Sans";
+}
+
+$clr-Dark-cyan: hsl(185, 75%, 39%);
+$clr-Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+$clr-Dark-grayish-blue: hsl(227, 10%, 46%);
+$clr-Dark-gray: hsl(0, 0%, 59%);
+
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 8rem 1.5rem;
+  background-image: url(images/bg-pattern-top.svg),
+    url(images/bg-pattern-bottom.svg);
+
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto;
+  background-size: 50rem;
+  background-color: #1694a3;
+  background-position-y: -29rem, 20rem;
+  background-position-x: -37rem, 10rem;
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    text-align: center;
+    border-radius: 1rem;
+
+    .background-image-card {
+      width: 100%;
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+    }
+    .victor-image {
+      border: 4px solid white;
+      border-radius: 50%;
+      position: relative;
+      margin-top: -3rem;
+    }
+    h1 {
+      color: $clr-Very-dark-desaturated-blue;
+      position: relative;
+      margin-top: 1.5rem;
+      font-size: 1.18rem;
+    }
+    span {
+      color: $clr-Dark-grayish-blue;
+      margin-left: 0.5rem;
+      font-weight: 400;
+    }
+    .city {
+      color: $clr-Dark-grayish-blue;
+      margin-top: 0.5rem;
+      font-weight: 500;
+    }
+    .social-media {
+      display: flex;
+      flex-direction: row;
+      border-top: 1px solid $clr-Dark-gray;
+      width: max-content;
+      padding: 2rem;
+      gap: 3.4rem;
+      margin-top: 2rem;
+    }
+    .social-media-stats {
+      h2 {
+        color: $clr-Very-dark-desaturated-blue;
+        font-size: 1.3rem;
+      }
+      .stats {
+        word-spacing: 2;
+        color: $clr-Dark-grayish-blue;
+        font-weight: 400;
+        font-size: 0.8rem;
+        margin-top: 0.3rem;
+      }
+    }
+  }
+  footer {
+    margin-top: 2rem;
+  }
+}
