@@ -33,7 +33,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     text-align: center;
     border-radius: 1rem;
 
@@ -87,7 +87,22 @@ body {
       }
     }
   }
-  footer {
-    margin-top: 2rem;
+}
+@media screen and (min-width: 700px) {
+  body {
+    padding: 7rem;
+    justify-content: center;
+    align-items: center;
+    background-size: 50rem;
+
+    background-position-y: -29rem, 20rem;
+    background-position-x: -8rem, 45rem;
+    main {
+      background-color: white;
+      width: 25rem;
+      .social-media {
+        gap: 5.7rem;
+      }
+    }
   }
 }

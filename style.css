@@ -110,7 +110,25 @@ body main .social-media-stats .stats {
   margin-top: 0.3rem;
 }
 
-body footer {
-  margin-top: 2rem;
+@media screen and (min-width: 700px) {
+  body {
+    padding: 7rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-size: 50rem;
+    background-position-y: -29rem, 20rem;
+    background-position-x: -8rem, 45rem;
+  }
+  body main {
+    background-color: white;
+    width: 25rem;
+  }
+  body main .social-media {
+    gap: 5.7rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
